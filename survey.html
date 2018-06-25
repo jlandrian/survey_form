@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="survey.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>FCC - Survey Form</title>
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">Survey on Coding</h1>
+        <p id="description">Tell us your thoughts so far on learning to code</p>
+    </header>
+    <main>
+        <div class="container">
+            <form action="" id="survey-form">
+                <div class="text-input">
+                    <label for="name" id="name-label" class="label-text">Name:</label>
+                    <input type="text" id="name" class="input-box" name="name" required placeholder="Name">
+                </div>
+                <div class="text-input">
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" id="email" class="input-box" name="email" required placeholder="Email">
+                </div>
+                <div class="text-input">
+                    <label for="age" id="number-label">Age:</label>
+                    <input type="number" id="number" class="input-box" name="age" min="13" max="100" placeholder="Age">
+                </div>
+                <select name="dropdown" id="dropdown">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="2">3</option>
+                </select>
+                <label for="r1">R1
+                    <input type="radio" id="r1" name="radio">
+                </label>
+                <label for="r2">R2
+                    <input type="radio" id="r2" name="radio">
+                </label>
+                <label for="r3">R3
+                    <input type="radio" id="r3" name="radio">
+                </label>
+                <label for="check1">C1
+                    <input type="checkbox" value="1" id="check1" name="check">
+                </label>
+                <label for="check2">C2
+                    <input type="checkbox" value="2" id="check2" name="check">
+                </label>
+                <label for="check3">C3
+                    <input type="checkbox" value="3" name="check" id="check3">
+                </label>
+                <label for="check4">C4
+                    <input type="checkbox" value="4" name="check" id="check4">
+                </label>
+                <textarea name="extra" id="extra" cols="30" rows="10"></textarea>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

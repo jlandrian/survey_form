@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h1 + p {
+    text-align: center;
+    padding: .6rem;
+}
+
+.container {
+    display: flex;
+    width: 65%;
+    margin: auto;
+    background-color: yellowgreen;
+    justify-content: center;
+}
+
+.text-input {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+    margin: 1rem auto;
+    /* border: 1px solid black; */
+}
+
+.input-box {
+    height: 2rem;
+    font-size: 1rem;
+    width: 350px;
+    margin-left: 20px;
+    padding: 3px;
+}
